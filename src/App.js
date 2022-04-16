@@ -11,13 +11,17 @@ function App() {
   return (
     <div>
       <Header/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/blogs" element={<Blogs/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/regester" element={<Signup/>}/>
-        <Route path="/login" element={<Login/>}/>
-      </Routes>
+      <main className="max-w-7xl mx-auto">
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/blogs" element={<Blogs/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/regester" element={<Signup/>}/>
+          <Route path="/login" element={<Login/>}/>
+        </Routes>
+      </main>
+      
       <Footer/>      
     </div>
   );

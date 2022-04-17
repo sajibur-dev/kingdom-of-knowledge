@@ -1,0 +1,40 @@
+[
+  {
+    "id": "625b11be5e5505fb5eef6f3a",
+    "balance": "$904.59",
+    "picture": "http://placehold.it/32x32",
+    "name": "Full stack web devlopment",
+    "discription": "The complete 2022 web development bootcamp"
+  },
+  {
+    "id": "625b11be9a7bb64c78147f28",
+    "balance": "$522.93",
+    "picture": "http://placehold.it/32x32",
+    "name": "App development",
+    "discription": "App development course for bigginer"
+  },
+  {
+    "id": "625b11bef22abdae9778ead5",
+    "balance": "$631.46",
+    "picture": "http://placehold.it/32x32",
+    "name": "machine learning"
+  },
+  {
+    "id": "625b11be53cbc7d8f6c2d6ce",
+    "balance": "$852.05",
+    "picture": "http://placehold.it/32x32",
+    "name": "Anderson Griffith"
+  },
+  {
+    "id": "625b11be2c8654fa43e0934c",
+    "balance": "$788.07",
+    "picture": "http://placehold.it/32x32",
+    "name": "Kaye Bennett"
+  },
+  {
+    "id": "625b11be27f446b9d1db450e",
+    "balance": "$823.71",
+    "picture": "http://placehold.it/32x32",
+    "name": "Jayne Goodman"
+  }
+]

@@ -63,7 +63,7 @@ const Signup = () => {
               placeholder="password"
               type="password"
             />
-            <InputField type="submit" value="submit" />
+            <InputField type="submit" value="regester" />
           </form>
           <p>Already have an account? <Link className="text-red-400" to="/login">Login</Link> instead.</p>
           <button className="px-12 py-3 border-2 border-gray-400 rounded-xl mt-5" onClick={() => googleSignIn()}>google sign in </button>

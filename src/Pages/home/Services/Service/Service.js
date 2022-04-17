@@ -4,8 +4,8 @@ import Button from '../../../Shared/Button/Button';
 
 const Service = ({service}) => {
     const navigate =  useNavigate()
-    const {name,price,picture,rating,category,student,discription} = service;
-
+    const {name,balance,picture,rating,category,student,discription} = service;
+console.log(service)
     return (
         <div className='bg-white shadow-lg'>
             <div>
@@ -14,7 +14,7 @@ const Service = ({service}) => {
             <div className='p-5 space-y-7' >
                 <div className='flex justify-between items-center'>
                     <p className='text-blue-400'>{category}</p>
-                    <p className='text-red-500'>{price}</p>
+                    <p className='text-red-500'>{balance}</p>
                 </div>
                 <div>
                     <h3 className='text-xl'>{name}</h3>

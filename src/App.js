@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <main className="max-w-7xl mx-auto">
+      <main className="md:max-w-7xl md:mx-auto">
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/home" element={<Home/>}/>

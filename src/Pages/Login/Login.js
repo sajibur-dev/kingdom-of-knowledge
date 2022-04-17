@@ -23,11 +23,11 @@ const Login = () => {
     signInWithEmailAndPassword(email, password);
   };
   return (
-    <div>
+    <div className="mt-16">
       <h1 className="text-center text-xl">Login to your account</h1>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="md:grid md:grid-cols-2 md:gap-4 mb-5">
         <Illustration src={image} alt="login" />
-        <div className="pt-20">
+        <div className="pt-20 mx-6">
           <form onSubmit={handleLoginForm}>
             <InputField
               onBlur={(e) => setEmail(e.target.value)}

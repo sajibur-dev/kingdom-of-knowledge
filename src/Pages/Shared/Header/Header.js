@@ -1,7 +1,7 @@
 import {
-    faRightFromBracket,
-    faRightToBracket,
-    faUserPlus
+  faRightFromBracket,
+  faRightToBracket,
+  faUserPlus
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { signOut } from "firebase/auth";
@@ -15,7 +15,7 @@ const Header = () => {
   const [user] = useAuthState(auth);
   return (
     <header className="py-6 ">
-      <nav className="flex justify-between items-center max-w-7xl mx-auto">
+      <nav className="md:flex md:justify-between md:items-center max-w-7xl mx-auto">
         <div>
           <Link to="/" className="flex justify-center items-center">
             <img src={logo} className="mr-5" alt="" />
@@ -23,23 +23,23 @@ const Header = () => {
           </Link>
         </div>
 
-        <div>
+        <div className="mt-5">
           <ul>
             <NavLink
-              className={ ` text-lg mr-7 ` }
+              className={ ` text-lg md:mr-7 mr-3 ` }
 
               to="/home"
             >
               home
             </NavLink>
-            <NavLink className={` text-lg mr-7 `} to="/blogs">
+            <NavLink className={` text-lg md:mr-7 mr-3 `} to="/blogs">
               blogs
             </NavLink>
-            <NavLink className={` text-lg mr-7 `} to="/about">
+            <NavLink className={` text-lg md:mr-7 mr-3 `} to="/about">
               about me
             </NavLink>
 
-            <NavLink className="text-lg mr-7" to="/regester">
+            <NavLink className="text-lg md:mr-7 mr-3" to="/regester">
               <FontAwesomeIcon className="text-xl" icon={faUserPlus} />
             </NavLink>
             {user ? (
@@ -50,7 +50,7 @@ const Header = () => {
                 />
               </button>
             ) : (
-              <NavLink className="text-lg mr-7" to="/login">
+              <NavLink className="text-lg md:mr-7 mr-3" to="/login">
                 <FontAwesomeIcon className="text-xl" icon={faRightToBracket} />
               </NavLink>
             )}

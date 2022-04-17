@@ -7,7 +7,7 @@ const Service = ({service}) => {
     const {name,balance,picture,rating,category,student,discription} = service;
 console.log(service)
     return (
-        <div className='bg-white shadow-lg'>
+        <div className='bg-white shadow-lg w-full mx-auto '>
             <div>
                 <img className='h-52 w-full' src={picture} alt="course" />
             </div>

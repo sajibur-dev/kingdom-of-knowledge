@@ -18,7 +18,7 @@ const SocialLogin = () => {
     }
     return (
         <div>
-            <button className="px-12 py-3 border-2 border-gray-400 rounded-xl mt-5" onClick={() => googleSignIn()}>google sign in </button>
+            <button className="md:px-12 px-3 py-3 border-2 border-gray-400 rounded-xl mt-5" onClick={() => googleSignIn()}>google sign in </button>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {
-    useCreateUserWithEmailAndPassword,
-    useUpdateProfile
+  useCreateUserWithEmailAndPassword,
+  useUpdateProfile
 } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import image from "../../assets/images/signup.svg";
@@ -34,11 +34,11 @@ const Signup = () => {
   return (
     <div className="mt-16">
       <h1 className="text-center text-xl">Create an account</h1>
-      <div className="grid grid-cols-2 gap-4">
-        <Illustration src={image} alt="signup" />
-        <div>
+      <div className="md:grid md:grid-cols-2 md:gap-4 mb-12">
+        <Illustration  src={image} alt="signup" />
+        <div className="px-5">
           <form
-            className="py-12 px-8"
+            className="py-12 "
             onSubmit={handleSubmitForm}
           >
             <InputField

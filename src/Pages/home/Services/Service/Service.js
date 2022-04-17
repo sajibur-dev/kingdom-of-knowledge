@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '../../../Shared/Button/Button';
 
 const Service = ({service}) => {
+    const navigate =  useNavigate()
     const {name,price,picture,rating,category,student,discription} = service;
+
     return (
         <div className='bg-white shadow-lg'>
             <div>
@@ -20,7 +23,7 @@ const Service = ({service}) => {
                     <p>{rating}</p>
                     <p>{student}k <span className='text-gray-400'>student</span></p>
                 </div>
-                <Button>Checkout</Button>
+                <Button onClick = {() => navigate('/checkout')}>Checkout</Button>
             </div>
         </div>
     );

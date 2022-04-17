@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import bannerImg from "../../../assets/images/banner.jpg";
 import Button from "../../Shared/Button/Button";
 
 const Banner = () => {
+  const navigate =  useNavigate()
   return (
     <div className="flex justify-around items-center mt-12">
       <div className="space-y-6 px-7">
@@ -17,7 +19,7 @@ const Banner = () => {
           </p>
           <p>me anytime anywhere </p>
         </div>
-        <Button>Create account</Button>
+        <Button onClick={() => navigate('/regester')}>Create account</Button>
       </div>
       <div>
         <img className="w-80" src={bannerImg} alt="" />

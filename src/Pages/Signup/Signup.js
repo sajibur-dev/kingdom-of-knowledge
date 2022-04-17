@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
     useCreateUserWithEmailAndPassword,
-    useSignInWithGoogle,
     useUpdateProfile
 } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,6 +8,7 @@ import image from "../../assets/images/signup.svg";
 import auth from "../../firebase";
 import Illustration from "../Shared/Illstration/Illustration";
 import InputField from "../Shared/InputField/InputField";
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 const Signup = () => {
   const [displayName, setDisplaName] = useState("");
@@ -21,9 +21,8 @@ const Signup = () => {
 
   const [updateProfile] = useUpdateProfile(auth);
 
-  const [signInWithGoogle, googleUser,] = useSignInWithGoogle(auth);
 
-  if (user || googleUser) {
+  if (user) {
     navigate("/");
   }
 
@@ -32,12 +31,6 @@ const Signup = () => {
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName });
   };
-
-  const googleSignIn =  () => {
-      console.log('google sign in')
-      signInWithGoogle()
-  }
-
   return (
     <div className="mt-16">
       <h1 className="text-center text-xl">Create an account</h1>
@@ -66,7 +59,7 @@ const Signup = () => {
             <InputField type="submit" value="regester" />
           </form>
           <p>Already have an account? <Link className="text-red-400" to="/login">Login</Link> instead.</p>
-          <button className="px-12 py-3 border-2 border-gray-400 rounded-xl mt-5" onClick={() => googleSignIn()}>google sign in </button>
+          <SocialLogin/>
         </div>
       </div>
     </div>

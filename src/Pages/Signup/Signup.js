@@ -16,7 +16,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
-  const [createUserWithEmailAndPassword, user, loading] =
+  const [createUserWithEmailAndPassword, user, loading,error] =
     useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
 
   const [updateProfile] = useUpdateProfile(auth);
@@ -56,8 +56,10 @@ const Signup = () => {
               placeholder="password"
               type="password"
             />
-            <InputField type="submit" value="regester" />
+            <InputField specificStyle={true} type="submit" value="regester" />
           </form>
+          {loading && <p className="text-center text-blue-400">loading...</p>}
+          {error && <p className="text-cetner text-red-400 ">{error.message}</p>}
           <p>Already have an account? <Link className="text-red-400" to="/login">Login</Link> instead.</p>
           
           <SocialLogin/>

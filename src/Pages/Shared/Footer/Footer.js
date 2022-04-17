@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="md:grid md:grid-cols-2">
           <div className="p-12 space-y-5">
             <h1 className="md:text-4xl text-white">Start Learning with 61.5k students around the world</h1>
-            <Button onClick = {() => navigate('/regester')}>Join the family</Button>
+            <Button  bgColor="bg-gray-400" onClick = {() => navigate('/regester')}>Join the family</Button>
             <button className="md:px-10 px-3 py-2 rounded-md bg-slate-500 md:ml-5">Browse all course</button>
           </div>
           <div className="flex justify-center items-center">

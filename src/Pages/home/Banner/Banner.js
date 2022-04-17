@@ -20,7 +20,7 @@ const Banner = () => {
           </p>
           <p>me anytime anywhere </p>
         </div>
-        <Button onClick={() => navigate('/regester')}>Create account</Button>
+        <Button bgColor="bg-blue-800" textColor="text-white" onClick={() => navigate('/regester')}>Create account</Button>
       </div>
 
       <div className="ml-8">

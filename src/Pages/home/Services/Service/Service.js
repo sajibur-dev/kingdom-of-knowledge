@@ -23,7 +23,7 @@ console.log(service)
                     <p>{rating}</p>
                     <p>{student}k <span className='text-gray-400'>student</span></p>
                 </div>
-                <Button onClick = {() => navigate('/checkout')}>Checkout</Button>
+                <Button bgColor="bg-green-400"  onClick = {() => navigate('/checkout')}>Checkout</Button>
             </div>
         </div>
     );

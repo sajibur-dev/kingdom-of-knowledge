@@ -30,7 +30,7 @@ const Login = () => {
   };
   return (
     <div className="mt-16">
-      <ToastContainer />
+      <ToastContainer className="border-2 border-gray-500 w-36" />
       <h1 className="text-center text-xl">Login to your account</h1>
       <div className="md:grid md:grid-cols-2 md:gap-4 mb-5">
         <Illustration src={image} alt="login" />
@@ -42,11 +42,12 @@ const Login = () => {
               placeholder="email"
             />
             <InputField
+              
               onBlur={(e) => setPassword(e.target.value)}
               type="password"
               placeholder="password"
             />
-            <InputField type="submit" value="login" />
+            <InputField specificStyle = {true} type="submit" value="login" />
           </form>
           {loading && <p className="text-blue-400 text-center my-5">loading ...</p> }
           {error && <p className="text-red-400 text-center my-5" >{error.message}</p>}
@@ -57,7 +58,7 @@ const Login = () => {
             </Link>{" "}
             instead.
           </p>
-          <Button
+          <Button bgColor="bg-green-400"
             onClick={async () => {
               await sendPasswordResetEmail(email);
 

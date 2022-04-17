@@ -1,7 +1,7 @@
 [
   {
     "id": "625b11be5e5505fb5eef6f3a",
-    "price": "$904.59",
+    "balance": "$904.59",
     "picture": "https://i.ibb.co/GtBhsMT/img-1.jpg",
     "name": "Full stack web devlopment",
     "rating": 5.0,
@@ -21,7 +21,7 @@
   },
   {
     "id": "625b11bef22abdae9778ead5",
-    "price": "$631.46",
+    "balance": "$631.46",
     "picture": "https://i.ibb.co/h7FsTkJ/img-3.jpg",
     "name": "machine learning",
     "rating": 5.0,
@@ -31,7 +31,7 @@
   },
   {
     "id": "625b11be53cbc7d8f6c2d6ce",
-    "price": "$852.05",
+    "balance": "$852.05",
     "picture": "https://i.ibb.co/hfx6XMz/img-4.jpg",
     "name": "Digital Marketing",
     "rating": 5.0,
@@ -41,7 +41,7 @@
   },
   {
     "id": "625b11be2c8654fa43e0934c",
-    "price": "$788.07",
+    "balance": "$788.07",
     "picture": "https://i.ibb.co/ssfQFtb/img-5.jpg",
     "name": "DevOps engineer course",
     "rating": 5.0,
@@ -51,7 +51,7 @@
   },
   {
     "id": "625b11be27f446b9d1db450e",
-    "price": "$823.71",
+    "balance": "$823.71",
     "picture": "https://i.ibb.co/ssfQFtb/img-5.jpg",
     "name": "software enginnering",
     "rating": 5.0,

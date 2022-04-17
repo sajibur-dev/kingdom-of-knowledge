@@ -26,20 +26,20 @@ const Header = () => {
         <div className="mt-5">
           <ul>
             <NavLink
+            style={({isActive}) => isActive ? {color:"goldenrod"} : {}}
               className={ ` text-lg md:mr-7 mr-3 ` }
-
               to="/home"
             >
               home
             </NavLink>
-            <NavLink className={` text-lg md:mr-7 mr-3 `} to="/blogs">
+            <NavLink style={({isActive}) => isActive ? {color:"goldenrod"} : {}} className={` text-lg md:mr-7 mr-3 `} to="/blogs">
               blogs
             </NavLink>
-            <NavLink className={` text-lg md:mr-7 mr-3 `} to="/about">
+            <NavLink style={({isActive}) => isActive ? {color:"goldenrod"} : {}} className={` text-lg md:mr-7 mr-3 `} to="/about">
               about me
             </NavLink>
 
-            <NavLink className="text-lg md:mr-7 mr-3" to="/regester">
+            <NavLink style={({isActive}) => isActive ? {color:"goldenrod"} : {}}  className="text-lg md:mr-7 mr-3" to="/regester">
               <FontAwesomeIcon className="text-xl" icon={faUserPlus} />
             </NavLink>
             {user ? (
@@ -50,7 +50,7 @@ const Header = () => {
                 />
               </button>
             ) : (
-              <NavLink className="text-lg md:mr-7 mr-3" to="/login">
+              <NavLink style={({isActive}) => isActive ? {color:"goldenrod"} : {}} className="text-lg md:mr-7 mr-3" to="/login">
                 <FontAwesomeIcon className="text-xl" icon={faRightToBracket} />
               </NavLink>
             )}

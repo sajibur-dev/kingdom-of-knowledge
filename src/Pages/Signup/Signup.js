@@ -17,7 +17,7 @@ const Signup = () => {
 
   const navigate = useNavigate();
   const [createUserWithEmailAndPassword, user, loading] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
 
   const [updateProfile] = useUpdateProfile(auth);
 
@@ -59,6 +59,7 @@ const Signup = () => {
             <InputField type="submit" value="regester" />
           </form>
           <p>Already have an account? <Link className="text-red-400" to="/login">Login</Link> instead.</p>
+          
           <SocialLogin/>
         </div>
       </div>

@@ -1,40 +1,62 @@
 [
   {
     "id": "625b11be5e5505fb5eef6f3a",
-    "balance": "$904.59",
-    "picture": "http://placehold.it/32x32",
+    "price": "$904.59",
+    "picture": "https://i.ibb.co/GtBhsMT/img-1.jpg",
     "name": "Full stack web devlopment",
+    "rating": 5.0,
+    "category": "Development",
+    "student": 13,
     "discription": "The complete 2022 web development bootcamp"
   },
   {
     "id": "625b11be9a7bb64c78147f28",
-    "balance": "$522.93",
-    "picture": "http://placehold.it/32x32",
+    "price": "$522.93",
+    "picture": "https://i.ibb.co/cc5kFZD/img-2.jpg",
     "name": "App development",
+    "rating": 5.0,
+    "category": "Development",
+    "student": 15,
     "discription": "App development course for bigginer"
   },
   {
     "id": "625b11bef22abdae9778ead5",
-    "balance": "$631.46",
-    "picture": "http://placehold.it/32x32",
-    "name": "machine learning"
+    "price": "$631.46",
+    "picture": "https://i.ibb.co/h7FsTkJ/img-3.jpg",
+    "name": "machine learning",
+    "rating": 5.0,
+    "category": "Development",
+    "student": 12,
+    "discription": "bigginer macine learning course"
   },
   {
     "id": "625b11be53cbc7d8f6c2d6ce",
-    "balance": "$852.05",
-    "picture": "http://placehold.it/32x32",
-    "name": "Anderson Griffith"
+    "price": "$852.05",
+    "picture": "https://i.ibb.co/hfx6XMz/img-4.jpg",
+    "name": "Digital Marketing",
+    "rating": 5.0,
+    "category": "Marketing",
+    "student": 10,
+    "discription": "Professional digital marketing course"
   },
   {
     "id": "625b11be2c8654fa43e0934c",
-    "balance": "$788.07",
-    "picture": "http://placehold.it/32x32",
-    "name": "Kaye Bennett"
+    "price": "$788.07",
+    "picture": "https://i.ibb.co/ssfQFtb/img-5.jpg",
+    "name": "DevOps engineer course",
+    "rating": 5.0,
+    "category": "Enginnering",
+    "student": 10,
+    "discription": "DevOps enigineering course for professional"
   },
   {
     "id": "625b11be27f446b9d1db450e",
-    "balance": "$823.71",
-    "picture": "http://placehold.it/32x32",
-    "name": "Jayne Goodman"
+    "price": "$823.71",
+    "picture": "https://i.ibb.co/ssfQFtb/img-5.jpg",
+    "name": "software enginnering",
+    "rating": 5.0,
+    "category": "Academic",
+    "student": 16,
+    "discription": "this is academic course"
   }
 ]

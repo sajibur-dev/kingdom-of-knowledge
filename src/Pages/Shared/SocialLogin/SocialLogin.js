@@ -14,7 +14,7 @@ const SocialLogin = () => {
   return (
     <div className="mt-8">
       <button
-          className=" border-2 border-gray-400 rounded-full  block flex justify-center items-center px-5 py-3 my-3 "
+          className=" border-2 border-gray-400 rounded-full  flex justify-center items-center px-5 py-3 my-3 "
           onClick={() => signInWithGoogle()}
         >
           <img src={GoogleLogin} alt="" />{" "}

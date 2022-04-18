@@ -14,7 +14,7 @@ const Checkout = () => {
   return (
     <div className="md:flex md:justify-center md:items-center my-20 ">
       <div>
-          {welcomeMessage &&  <p className="my-8 text-2xl text-blue-600 ">{welcomeMessage}</p>}
+          {welcomeMessage &&  <p className="my-16 text-6xl text-blue-600 ">{welcomeMessage}</p>}
         <form className="space-y-5" onSubmit={handleCheckoutForm}>
           <input
             className="block border-2 border-gray-700 leading-8 rounded-md px-5 outline-none"

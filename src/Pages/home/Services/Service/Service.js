@@ -10,9 +10,15 @@ const Service = ({service}) => {
 console.log(service)
     return (
         <div className='bg-white shadow-lg w-full mx-auto '>
-            <div>
-                <img id={styles.hoverEffect} className='h-52 w-full' src={picture} alt="course" />
+
+            <div className={styles.service}>
+                <img src={picture} alt="course" />
+                <div className={styles.discription}>
+                    <p>{discription}</p>
+                </div>
             </div>
+
+            
             <div className='p-5 space-y-7' >
                 <div className='flex justify-between items-center'>
                     <p className='text-blue-400'>{category}</p>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../../Shared/Button/Button';
+import styles from './Service.module.css';
+
 
 const Service = ({service}) => {
     const navigate =  useNavigate()
@@ -9,7 +11,7 @@ console.log(service)
     return (
         <div className='bg-white shadow-lg w-full mx-auto '>
             <div>
-                <img className='h-52 w-full' src={picture} alt="course" />
+                <img id={styles.hoverEffect} className='h-52 w-full' src={picture} alt="course" />
             </div>
             <div className='p-5 space-y-7' >
                 <div className='flex justify-between items-center'>
@@ -23,7 +25,7 @@ console.log(service)
                     <p>{rating}</p>
                     <p>{student}k <span className='text-gray-400'>student</span></p>
                 </div>
-                <Button bgColor="bg-green-400"  onClick = {() => navigate('/checkout')}>Checkout</Button>
+                <Button bgColor="bg-blue-800" textColor="text-white"  onClick = {() => navigate('/checkout')}>Checkout</Button>
             </div>
         </div>
     );

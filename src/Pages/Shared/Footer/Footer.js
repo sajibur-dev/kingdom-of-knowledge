@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto space-y-7">
         <div className="md:grid md:grid-cols-2">
           <div className="p-12 space-y-5">
-            <h1 className="md:text-4xl text-white">Start Learning with 61.5k students around the world</h1>
+            <h1 className="md:text-4xl text-white mb-5">Start Learning with 61.5k students around the world</h1>
             <Button  bgColor="bg-gray-400" onClick = {() => navigate('/regester')}>Join the family</Button>
             <button className="md:px-10 px-3 py-2 rounded-md bg-slate-500 md:ml-5">Browse all course</button>
           </div>
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center">
-          <p>&copy; {new Date().getFullYear()}-all right resrved</p>
+          <p className="text-white">&copy; {new Date().getFullYear()} all right resrved</p>
         </div>
       </div>
     </footer>

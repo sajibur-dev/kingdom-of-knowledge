@@ -15,7 +15,7 @@ const Header = () => {
   const [user] = useAuthState(auth);
   return (
     <header className="py-6 ">
-      <nav className="md:flex md:justify-between md:items-center max-w-7xl mx-auto">
+      <nav className="md:flex md:justify-between md:items-center max-w-7xl mx-auto ">
         <div>
           <Link to="/" className="flex justify-center items-center">
             <img src={logo} className="mr-5" alt="" />
@@ -28,7 +28,7 @@ const Header = () => {
             <NavLink
             style={({isActive}) => isActive ? {color:"goldenrod"} : {}}
               className={ ` text-lg md:mr-7 mr-3 ` }
-              to="/home"
+              to="/"
             >
               home
             </NavLink>

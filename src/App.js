@@ -17,7 +17,6 @@ function App() {
       <main className="md:max-w-7xl md:mx-auto">
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/home" element={<Home/>}/>
           <Route path="/blogs" element={<Blogs/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/checkout" element={<RequireAuth> <Checkout/></RequireAuth>}/>

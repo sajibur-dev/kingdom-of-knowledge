@@ -10,7 +10,7 @@ const About = () => {
             <h3 className="text-3xl">Sajibur Rahman</h3>
             <h4 className="text-sm">Email : sajiburr21@gmail.com</h4>
             <h4 className="text-sm">Phone : +880 1830394432</h4>
-            <h4 className="text-sm">Github : </h4>
+            <h4 className="text-sm">Github : https://github.com/sajibur-rahman </h4>
           </div>
           <div>
             <p>

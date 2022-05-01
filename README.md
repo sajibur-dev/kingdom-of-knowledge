@@ -1,6 +1,6 @@
 # Kingdom of knowlege
 
-This project live link [Kindom of Knowledge](hhttps://kingdom-of-knowledge.web.app/).
+This project live link [Kindom of Knowledge](https://kingdom-of-knowledge.web.app/).
 
 ## Main functionality :
 

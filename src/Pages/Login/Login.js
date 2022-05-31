@@ -5,13 +5,13 @@ import {
 } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import image from "../../assets/images/login.svg";
 import auth from "../../firebase";
 import Button from "../Shared/Button/Button";
 import Illustration from "../Shared/Illstration/Illustration";
 import InputField from "../Shared/InputField/InputField";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
-
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -30,7 +30,7 @@ const Login = () => {
   };
   return (
     <div className="mt-16">
-      <ToastContainer className="border-2 border-gray-500 w-36" />
+      <ToastContainer />
       <h1 className="text-center text-xl">Login to your account</h1>
       <div className="md:grid md:grid-cols-2 md:gap-4 mb-5">
         <Illustration src={image} alt="login" />
